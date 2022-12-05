@@ -1,15 +1,21 @@
 import React from 'react';
-import { Image } from 'react-native';
-import { Container } from './styles';
-import Logo from '../../assets/logo-makerclub.png';
+import { Text, View } from 'react-native';
+ 
+//import { Container } from './styles';
+//import Logo from '../../assets/logo-makerclub.png';
 
 function Header() {
   return(
-    <Container>
-      <Image
-        source={Logo}
-      />
-    </Container>
+
+    <View>
+    <Text>Notice that the status bar has light text!</Text>
+    {/* <StatusBar style="light" /> */}
+  </View>
+    //  <Container>
+    //   <Image
+    //     source={Logo}
+    //   />
+    //  </Container>
   )
 }
 
