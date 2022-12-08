@@ -11,6 +11,7 @@ mongoose.connect('mongodb+srv://Marcelo:1@nodeclusterjs.vthcis7.mongodb.net/test
 
 const colabRoute = require('./routes/colab.route');
 const admRoute = require('./routes/adm.route')
+const workstationRoutes = require('./routes/workstation.route')
 
 var app = express();
 app.use(bodyParser.json());
@@ -18,6 +19,9 @@ app.use(cors());
 
 app.use('/adm', admRoute);
 app.use('colab', colabRoute);
+app.use('Station', workstationRoutes);
+
+
 app.get('/',function(req,res){
     res.send("Server app");
 });

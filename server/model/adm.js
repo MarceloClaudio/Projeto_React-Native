@@ -13,7 +13,10 @@ let Adm = new Schema({
       },
       picture: {
         type: String
-      }
+      },
+      senha: {
+        type: String
+      },
     },{
     collection: 'adm'
 });

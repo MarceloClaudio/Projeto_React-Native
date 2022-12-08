@@ -13,7 +13,10 @@ let Colab = new Schema({
     },
     picture: {
         type: String
-    }
+    },
+    senha: {
+        type: String
+    },
     },{
     collection: 'colab'
 });
